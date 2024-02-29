@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<header class="article-header">
+    <h1 id="newspaper-title">Holisitc Herald</h1> 
+    <nav>
+        <div class="hamburger">☰</div>
+        <ul> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="article.html">Article</a></li>
+        </ul>
+    </nav> 
+</header> 
+<body>
+
+    <main class="photo-gallery"> 
+        
+       
+        <div class="slider">
+            <div class="img-box">
+                <img src="images/TCM herbs (1).jpeg" alt="A colorful photo of traditional Chinese herbs" class="slider-img">
+                
+            </div>
+            <button class="btn" onclick="prev()">Prev</button> 
+            <button class="btn" onclick="next()">Next</button>
+        </div>
+    
+        <script src="js/main.js"></script>
+
+    </main>
+    <!--Navigation Controls-->
+   
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function (){
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
